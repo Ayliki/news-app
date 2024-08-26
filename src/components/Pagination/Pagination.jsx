@@ -6,7 +6,7 @@ const Pagination = ({totalPages, handleNextPage, currentPage, handlePreviousPage
             <button 
                 className={cl.arrow}
                 disabled={currentPage<=1}
-                onClick={handleNextPage}
+                onClick={handleNextPage} 
             >
                 {'<'}
             </button>
