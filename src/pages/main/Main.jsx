@@ -6,7 +6,7 @@ import NewsList from '../../components/newsList/NewsList';
 import Skeleton from '../../components/skeleton/Skeleton';
 import Pagination from '../../components/Pagination/Pagination';
 import Categories from '../../components/Categories/Categories';
-import Search from '../../components/Search/Search'
+import Search from '../../components/search/Search'
 import {useDebounce} from '../../helpers/hooks/useDebounce'
 
 const Main = () => {
