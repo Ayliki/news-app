@@ -10,7 +10,7 @@ export const getNews = async({page_number = 1, page_size = 10, category, keyword
                 page_number,
                 page_size,
                 category,
-                keywords
+                keywords,
             }
         })
         return response.data    

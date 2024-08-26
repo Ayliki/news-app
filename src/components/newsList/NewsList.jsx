@@ -1,7 +1,6 @@
-import {formatDate} from '../../helpers/formatDate'
 import cl from './styles.module.css'
-import {formatTimeAgo} from '../../helpers/formatTimeAgo'
 import NewsElement from '../newsElement/newsElement'
+import withSkeleton from '../../helpers/hocs/withSkeleton'
 
 const NewsList = ({news}) =>{
     return(
@@ -13,4 +12,6 @@ const NewsList = ({news}) =>{
     ) 
 }
 
-export default NewsList 
+const NewsListWithSkeleton = withSkeleton(NewsList, 'item', 10);
+
+export default NewsListWithSkeleton; 
