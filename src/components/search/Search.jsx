@@ -1,14 +1,14 @@
 import cl from './styles.module.css'
 
-const Search = ({keyWords, setKeyWords}) =>{
+const Search = ({keywords, setKeywords}) =>{
     return(
         <div className={cl.search}>
             <input 
                 type="text" 
-                value={keyWords} 
+                value={keywords} 
                 className={cl.input} 
-                onChange={(e)=>setKeyWords(e.target.value)}
-                placeholder='Javascript'
+                onChange={(e)=>setKeywords(e.target.value)}
+                placeholder='Search...'
             />
         </div>
     )
