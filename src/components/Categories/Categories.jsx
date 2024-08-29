@@ -1,9 +1,9 @@
-import { forwardRef } from 'react'
+import {formatDate} from '../../helpers/formatDate'
 import cl from './styles.module.css'
 
-const Categories =forwardRef(({categories, setSelectedCategory, selectedCategory}, ref) =>{
+const Categories = ({categories, setSelectedCategory, selectedCategory}) =>{
     return(
-        <div ref={ref} className={cl.categories}>
+        <div className={cl.categories}>
             {categories.map(category => {
                 return (
                     <button 
@@ -17,8 +17,6 @@ const Categories =forwardRef(({categories, setSelectedCategory, selectedCategory
             })}
         </div>
     )
-}); 
-
-Categories.displayName = 'Categories'
+} 
 
 export default Categories
