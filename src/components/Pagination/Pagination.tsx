@@ -1,6 +1,7 @@
+import { IPaginationProps } from '../../interfaces'
 import cl from './styles.module.css'
 
-const Pagination = ({totalPages, handleNextPage, currentPage, handlePreviousPage, handlePageClick}) =>{
+const Pagination = ({totalPages, handleNextPage, currentPage, handlePreviousPage, handlePageClick} : IPaginationProps) =>{
     return(
         <div className={cl.pagination}>
             <button 
