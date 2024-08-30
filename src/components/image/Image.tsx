@@ -1,8 +1,10 @@
-import {formatDate} from '../../helpers/formatDate'
 import cl from './styles.module.css'
-import {formatTimeAgo} from '../../helpers/formatTimeAgo'
 
-const Image = ({image}) =>{
+interface Props{
+    image: string
+}
+
+const Image = ({image}: Props) =>{
     return(
         <div className={cl.wrapper}>
             {image ? <img src={image} alt='news' className={cl.image}/> : null}

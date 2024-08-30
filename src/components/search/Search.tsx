@@ -1,6 +1,11 @@
 import cl from './styles.module.css'
 
-const Search = ({keywords, setKeywords}) =>{
+interface Props{
+    keywords: string;
+    setKeywords: (keywords: string) => void
+}
+
+const Search = ({keywords, setKeywords}: Props) =>{
     return(
         <div className={cl.search}>
             <input 
