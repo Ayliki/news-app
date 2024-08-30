@@ -1,6 +1,6 @@
 import cl from './styles.module.css';
-import LatestNews from '../../components/latestNews/LatestNews';
-import NewsByFilters from '../../components/newsByFilters/NewsByFilters';
+import LatestNews from '../../components/latestNews/LatestNews.tsx';
+import NewsByFilters from '../../components/newsByFilters/NewsByFilters.tsx';
 
 const Main = () => {
     return (
