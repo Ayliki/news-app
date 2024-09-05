@@ -5,7 +5,7 @@ import { CategoriesType } from '../../interfaces';
 interface Props{
     categories: CategoriesType[];
     setSelectedCategory: (category: CategoriesType | null) => void;
-    selectedCategory: CategoriesType | null
+    selectedCategory: CategoriesType | null;
 }
 
 const Categories =forwardRef(({categories, setSelectedCategory, selectedCategory} : Props, ref: ForwardedRef<HTMLDivElement>) =>{

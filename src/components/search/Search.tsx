@@ -1,3 +1,4 @@
+import { useTheme } from '../context/ThemeContext';
 import cl from './styles.module.css'
 
 interface Props{
@@ -6,8 +7,10 @@ interface Props{
 }
 
 const Search = ({keywords, setKeywords}: Props) =>{
+    const {isDark} = useTheme();
+
     return(
-        <div className={cl.search}>
+        <div className={`${cl.search} ${isDark ? cl.dark : cl.light}`}>
             <input 
                 type="text" 
                 value={keywords} 
