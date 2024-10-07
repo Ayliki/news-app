@@ -9,7 +9,7 @@ const Header = () =>{
         <header className={`${cl.header} ${isDark ? cl.dark : cl.light}`}>
             <div className={cl.info}>
                <h1 className={cl.title}>
-                News Reactify
+                News
                 </h1 >
                 <p className={cl.data}>{formatDate(new Date())}</p>  
             </div>
